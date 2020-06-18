@@ -1,6 +1,6 @@
 # PySpark In Jupyter
 
-I jotted down the steps to setup Apache Spark and use PySpark in Jupyter notebook on my local machine (Mac).
+I jotted down the steps to setup Apache Spark and running [PySpark in Jupyter](https://towardsdatascience.com/how-to-use-pyspark-on-your-computer-9c7180075617) notebook on my local machine (Mac).
 
 #### Setup Spark
 1. Download Spark - http://spark.apache.org/downloads.html
