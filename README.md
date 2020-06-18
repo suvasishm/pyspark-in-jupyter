@@ -1,8 +1,6 @@
 # PySpark In Jupyter
 
-I jotted down the steps to setup Apache Spark focusing PySpark on my local machine (Mac). For details, refer to the following:
-
-1. https://towardsdatascience.com/how-to-use-pyspark-on-your-computer-9c7180075617
+I jotted down the steps to setup Apache Spark focusing PySpark on my local machine (Mac).
 
 #### Setup Spark
 1. Download Spark - http://spark.apache.org/downloads.html
@@ -36,6 +34,18 @@ $ pyspark
 ```
 
 You will be redirected to http://localhost:8888/tree
+
+
+## Note: So far what I've done, can be acieved quickly using the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
+
+#### Start a container with the Notebook server listening on port 8888
+```
+$ docker run -it --rm -p 8888:8888 jupyter/pyspark-notebook
+```
+
+Ref: 
+1. https://towardsdatascience.com/how-to-use-pyspark-on-your-computer-9c7180075617
+
 
 
 
