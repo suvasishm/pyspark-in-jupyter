@@ -44,7 +44,7 @@ $ docker run -it --rm -p 8888:8888 jupyter/pyspark-notebook
 
 ### Note: Jupyter might fail to work on a system with Java 1.8+. I was getting error: Exception: Java gateway process exited before sending its port number.
 
-#### Manage multiple JDKs through Jenv
+#### Manage multiple JDKs through [Jenv](https://github.com/jenv/jenv)
 
 1. Install
 ```
