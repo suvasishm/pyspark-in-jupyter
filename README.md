@@ -36,7 +36,7 @@ $ pyspark
 You will be redirected to http://localhost:8888/tree
 
 
-## Note: So far what I've done, can be acieved quickly using the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
+### Note: So far what I've done, can be achieved quickly using the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
 
 #### Start a container with the Notebook server listening on port 8888
 ```
