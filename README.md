@@ -58,7 +58,7 @@ $ echo 'eval "$(jenv init -)"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
-1. Add multiple JDKs to Jenv
+1. Add multiple JDKs to jenv
 ```
 $ jenv add /Library/Java/JavaVirtualMachines/openjdk64-1.8.0.241.jdk/Contents/Home
 $ jenv add /Library/Java/JavaVirtualMachines/openjdk64-1.8.0.242.jdk/Contents/Home
