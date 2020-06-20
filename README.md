@@ -12,7 +12,7 @@ I jotted down the steps to setup Apache Spark and running [PySpark in Jupyter](h
 1. Create symbolic link - `$ ln -s /usr/local/Cellar/spark/x.y.z /usr/local/opt/spark`
 
 1. Set `SPARK_HOME` environment variable and add Spark to $PATH
-```
+```shell script
 $ echo 'export SPARK_HOME=/usr/local/opt/spark' >> ~/.bash_profile
 $ echo 'export PATH="$SPARK_HOME/bin:$PATH"' >> ~/.bash_profile
 $ source ~/.bash_profile
@@ -22,7 +22,7 @@ $ source ~/.bash_profile
 1. `$ pip3 install jupyter`
 
 1. Update the PySpark driver environment variables
-```
+```shell script
 $ echo 'export PYSPARK_DRIVER_PYTHON=jupyter' >> ~/.bash_profile
 $ echo 'export PYSPARK_DRIVER_PYTHON_OPTS=notebook' >> ~/.bash_profile
 $ echo 'export PYSPARK_PYTHON=python3' >> ~/.bash_profile 
@@ -30,8 +30,13 @@ $ source ~/.bash_profile
 ```
 
 #### Launch PySpark
-```
+```shell script
 $ pyspark
+```
+
+#### Run Jupyter Notebook
+```shell script
+$ jupyter notebook
 ```
 
 You will be redirected to http://localhost:8888/tree
