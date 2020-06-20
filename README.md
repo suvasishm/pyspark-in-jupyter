@@ -59,7 +59,7 @@ $ brew install jenv
 
 2. Add to PATH
 ```shell script
-echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
+$ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
 $ echo 'eval "$(jenv init -)"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
