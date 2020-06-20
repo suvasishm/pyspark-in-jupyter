@@ -44,7 +44,7 @@ You will be redirected to http://localhost:8888/tree
 ### Note: So far what I've done, can be achieved quickly using the [Jupyter Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html)
 
 #### Start a container with the Notebook server listening on port 8888
-```
+```shell script
 $ docker run -it --rm -p 8888:8888 jupyter/pyspark-notebook
 ```
 
@@ -53,37 +53,37 @@ $ docker run -it --rm -p 8888:8888 jupyter/pyspark-notebook
 #### Manage multiple JDKs through [jEnv](https://github.com/jenv/jenv)
 
 1. Install
-```
+```shell script
 $ brew install jenv
 ```
 
 2. Add to PATH
-```
+```shell script
 echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
 $ echo 'eval "$(jenv init -)"' >> ~/.bash_profile
 $ source ~/.bash_profile
 ```
 
 3. Add multiple JDKs to jenv
-```
+```shell script
 $ jenv add /Library/Java/JavaVirtualMachines/openjdk64-1.8.0.241.jdk/Contents/Home
 $ jenv add /Library/Java/JavaVirtualMachines/openjdk64-1.8.0.242.jdk/Contents/Home
 $ jenv add /Library/Java/JavaVirtualMachines/openjdk64-13.0.2.jdk/Contents/Home
 ```
 
 4. List all JDKs
-```
+```shell script
 $ jenv versions
 ```
 
 5. To configure java version, say 1.8.0.242, for a particular project
-```
+```shell script
 $ cd /path/to/project/dir/
 $ jenv local 1.8.0.242 
 ```
 
 6. Verify java version for that project
-```
+```shell script
 $ java --version
 ```
 
